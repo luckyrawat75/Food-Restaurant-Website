@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Team.css";
-import Footer from "./Footer";
+import "../Styles/Team.css";
+
 const chefs = [
   {
     id: 1,

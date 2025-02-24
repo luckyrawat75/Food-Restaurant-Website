@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Request.css";
+import "../Styles/Request.css";
 
 const Request = () => {
   const [isPlaying, setIsPlaying] = useState(false);

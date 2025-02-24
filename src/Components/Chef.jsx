@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Chef.css";
+import "../Styles/Chef.css";
 
 const chefs = [
   {

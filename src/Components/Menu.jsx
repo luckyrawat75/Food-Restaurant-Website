@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/Menu.css";
+import "../Styles/Menu.css";
 
 
 const menuData = {

@@ -1,6 +1,6 @@
 // Footer.js (React Component)
 import React from "react";
-import "../styles/footer.css";
+import "../Styles/footer.css";
 import { FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {

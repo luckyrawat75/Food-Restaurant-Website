@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Service.css";
-import Footer from "./Footer";
+import "../Styles/Service.css";
+
 const services = [
   {
     icon: "👨‍🍳",

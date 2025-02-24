@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.css";
+import "../Styles/Home.css";
 import Service from "./Service";
 import About from "./About";
 import Menu from "./Menu";
