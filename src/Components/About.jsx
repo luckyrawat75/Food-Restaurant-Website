@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/About.css";
-import MasterChefs from "./Chef";
+
 
 
 
@@ -45,7 +45,7 @@ const About = () => {
           <button className="about-button">READ MORE</button>
         </div>
       </div>
-     <MasterChefs/>
+    
     
     </>
   );
