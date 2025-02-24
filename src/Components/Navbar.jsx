@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="logo">
-        <span className="icon">🍽️</span> TastyRestoran
+        <span className="icon">🍽️</span> Crave Corner
       </div>
       <button
         className="mobile-menu-icon"

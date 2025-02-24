@@ -20,7 +20,7 @@ function Home() {
           </h1>
           <h2></h2>
           <p>
-          Welcome to TastyRestoran  where flavors come alive!<br/>
+          Welcome to Crave Corner  where flavors come alive!<br/>
 
            Enjoy our freshly prepared meals, crafted with love and the 
            finest<br/>  ingredients.

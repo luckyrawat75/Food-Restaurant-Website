@@ -17,7 +17,7 @@ const About = () => {
         <div className="about-content">
           <h4 className="about-subtitle">About Us</h4>
           <h2 className="about-title">
-            Welcome to <span className="highlight">🍴Restoran</span>
+            Welcome to <span className="highlight">🍴Crave Corner</span>
           </h2>
           <p className="para">
           Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet
