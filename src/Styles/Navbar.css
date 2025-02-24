@@ -1,0 +1,165 @@
+
+
+/* nav.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(15, 23, 43);
+  padding: 15px 30px;
+  position: relative;
+  
+}
+
+.logo {
+  font-size: 60px;
+  color: #ffa500;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-family: Heebo, sans-serif;
+}
+
+.icon {
+  margin-right: 10px;
+  cursor:pointer;
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover, .active {
+  color: #ffa500;
+}
+
+.book-btn {
+  background: #ffa500;
+  padding: 20px 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  margin-right: 60px;
+  font-weight:bold;
+  font-size: 25px;
+}
+
+.book-btn:hover {
+  background: #ff8c00;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: rgb(15, 23, 43);
+  list-style: none;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 5px 10px;
+}
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: #ffa500;
+}
+
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgb(15, 23, 43);
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links.mobile {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust top positioning as needed */
+    right: 0;
+    background: rgb(15, 23, 43);
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Ensure the dropdown is above other content */
+  }
+
+  .nav-links.mobile {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(15, 23, 43);
+  padding: 15px 30px;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0; /* Sticks to the top */
+  left: 0;
+  width: 100%; /* Ensures full width */
+  z-index: 1000; /* Keeps it above other content */
+}

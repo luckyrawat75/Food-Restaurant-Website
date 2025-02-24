@@ -1,0 +1,98 @@
+.menu-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background: #f8fbff;
+  }
+  
+  .menu-title {
+    margin-top:10%;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #222;
+  }
+  
+  .menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .tab.active {
+    border-bottom: 3px solid orange;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .menu-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .menu-info {
+    flex-grow: 1;
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  .menu-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .menu-desc {
+    font-size: 1.3rem;
+    color: #666;
+  }
+  
+  .menu-price {
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-item {
+      width: 100%;
+      flex-direction: row;
+      text-align: left;
+    }
+    .menu-image {
+      width: 70px;
+      height: 70px;
+    }
+  }

@@ -1,0 +1,175 @@
+.request-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0f172b;
+    padding: 40px;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .video-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .video-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: block;
+  }
+  
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+    opacity: 0;
+  }
+  
+  .video-container.playing img {
+    display: none;
+  }
+  
+  .video-container.playing video {
+    opacity: 1;
+  }
+  
+  .play-button {
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 165, 0, 0.9);
+    color: black;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .left-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: orange;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-container {
+    flex: 1;
+    background: #0f172b;
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  input:hover, input:focus,
+  select:hover, select:focus,
+  textarea:hover, textarea:focus {
+    box-shadow: 0 0 8px rgba(255, 165, 0, 0.6);
+    outline: none;
+  }
+  
+  textarea {
+    height: 30px;
+    width:auto;
+  }
+  
+  
+  button {
+    background: orange;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 1024px) {
+    .request-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .video-container, .form-container {
+      max-width: 100%;
+    }
+  
+    .video-container {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .video-container {
+      height: 200px;
+      max-width: 100%;
+    }
+  
+    .play-button {
+      width: 50px;
+      height: 50px;
+      font-size: 25px;
+    }
+  }
+  .custom-textarea {
+    width: auto;
+    height: 30px;
+}
